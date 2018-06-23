@@ -5,6 +5,8 @@ class Application
 
       hour = Kernel.rand(1..24)
 
+      resp.write "#{hour}"
+
       if hour < 12
         resp.write "Good Morning"
       else
